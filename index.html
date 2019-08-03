@@ -1,21 +1,63 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/da357ca4e9.js"></script>
+    <link rel="stylesheet" href="css/simplelightbox.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Ohto Pentikäinen</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
 </head>
+<body id="home">
+    <nav class="navbar">
+        <div class ="container">
+            <h1 class="logo">OP</h1>
+            <ul class="nav">
+                <ul class="nav"></ul>
+                <li><a href="https://www.linkedin.com/in/lad/">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<body>
-      <h1>OHTO PENTIKÄINEN</h1>
-      <body>+ 358 40 770 8840</body>
-        <br>
-        <body>opentika@gmail.com</body>
-          <br>
+    <!-- Profile part -->
+
+    <section class="section-a">
+    <div class="container">
+        <div>
+            <h1>Ohto Pentikäinen</h1>
+            <p>
+                A young lad interested in startups, private equity, real estate, blockchain, books, and tech in general.
+            </p>
+            <p>Based in Helsinki, Finland.</p>
+        </div>
+        <img src="img/ohto.jpg" alt=""/> 
+    </div>
+    </section>
+
+    <!-- Overlay Text-->
+    <section class="section-b">
+        <div class="overlay">
+            <div class="section-b-inner">
+                <h2><a id="contact"></a>Contact</h2>
+                <div class="buttons">
+                        <a href="tel:+358407708840" class="btn">Phone</a>
+                        <a href="mailto:opentika@gmail.com?Subject=Hi%20Ohto" class="btn">Email</a>
+                        <a href="https://www.facebook.com/ohto.pentikainen" class="btn">FB</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/simple-lightbox.min.js"></script>
+    <script>
+        $(function()  {
+            const $gallery = $('.gallery a').simpleLightbox();
+        });
+    </script>
+
 </body>
-
 </html>
